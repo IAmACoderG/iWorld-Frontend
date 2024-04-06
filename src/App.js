@@ -10,7 +10,7 @@ import AddNote from './components/AddNote';
 
 function App() {
 
-  const host = "http://localhost:4000";
+  const host = "https://iworld-backend.onrender.com";
   const [notes, setNotes] = useState([]);
   const navigate = useNavigate();
 

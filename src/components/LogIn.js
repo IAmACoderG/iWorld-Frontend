@@ -18,7 +18,7 @@ export default function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("Form submitted");
-        const response = await fetch("http://localhost:4000/api/auth/login", {
+        const response = await fetch("https://iworld-backend.onrender.com/api/auth/login", {
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
             headers: {
                 'Content-Type': 'application/json',

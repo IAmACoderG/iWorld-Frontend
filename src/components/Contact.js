@@ -5,7 +5,7 @@ import Btn from "./Btn";
 import { Link } from "react-router-dom"
 
 export default function Contact() {
-    const host = "http://localhost:4000";
+    const host = "https://iworld-backend.onrender.com";
 
     const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");

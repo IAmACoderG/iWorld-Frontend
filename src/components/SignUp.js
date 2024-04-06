@@ -18,7 +18,7 @@ export default function SignUp() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("Form submitted");
-        const response = await fetch("http://localhost:4000/api/auth/createUser", {
+        const response = await fetch("https://iworld-backend.onrender.com/api/auth/createUser", {
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
 
             headers: {
