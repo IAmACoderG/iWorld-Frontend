@@ -14,23 +14,23 @@ export default function Banner() {
     const words = [
         {
             text: "Welcome ",
-            className: "text-red-200 dark:text-blue-500 text-3xl lg:text-4xl xl:text-5xl",
+            className: "text-red-200 dark:text-red-200 text-2xl md:text-3xl lg:text-4xl xl:text-5xl",
         },
         {
             text: "To ",
-            className: "text-red-200 dark:text-blue-500 text-3xl lg:text-4xl xl:text-5xl",
+            className: "text-red-200 dark:text-red-200 text-2xl md:text-3xl lg:text-4xl xl:text-5xl",
         },
         {
             text: "The ",
-            className: "text-red-200 dark:text-blue-500 text-3xl lg:text-4xl xl:text-5xl",
+            className: "text-red-200 dark:text-red-200 text-2xl md:text-3xl lg:text-4xl xl:text-5xl",
         },
         {
             text: "AweSome ",
-            className: "text-pink-500 dark:text-blue-500 text-3xl lg:text-4xl xl:text-5xl",
+            className: "text-pink-500 dark:text-pink-500 text-2xl md:text-3xl lg:text-4xl xl:text-5xl",
         },
         {
-            text: "iNoteBook.",
-            className: "text-blue-500 dark:text-blue-500 text-3xl lg:text-4xl xl:text-5xl",
+            text: "i-World.",
+            className: "text-blue-500 dark:text-blue-500 text-2xl md:text-3xl lg:text-4xl xl:text-5xl",
         },
     ];
     return (
@@ -48,11 +48,11 @@ export default function Banner() {
             </div>
             <div className="flex flex-col items-center justify-center">
                 <TypewriterEffectSmooth words={words} />
-                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 z-50">
-                    <button onClick={handleClickExplore} className="text-2xl w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white cursor-pointer italic">
+                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 z-10">
+                    <button onClick={handleClickExplore} className="text-xl md:text-2xl w-40 h-10 rounded-xl bg-black dark:border-white border-transparent text-white cursor-pointer italic">
                         Explore Now
                     </button>
-                    <button onClick={handleClickSingup} className="w-40 h-10 rounded-xl bg-red-200 text-black border border-black  text-xl cursor-pointer italic">
+                    <button onClick={handleClickSingup} className="w-40 h-10 rounded-xl bg-red-200 text-black border border-black  text-lg cursor-pointer italic">
                         Signup
                     </button>
                 </div>

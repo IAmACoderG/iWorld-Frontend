@@ -6,35 +6,43 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Login from './components/LogIn';
 import SignUp from './components/SignUp';
-import Banner from './components/Banner';
 import Contact from "./components/Contact";
 import About from "./components/About";
+import AddNote from "./components/AddNote";
+import Banner from "./components/Banner"
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Banner />
-  },
-  {
-    path: "/login",
-    element: <Login />
-  },
-  {
-    path: "/signup",
-    element: <SignUp />
-  },
-  {
-    path: "/home",
     element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Banner />
+      },
+      {
+        path: "/home",
+        element: <AddNote />
+      },
+      {
+        path: "/login",
+        element: <Login />
+      },
+      {
+        path: "/signup",
+        element: <SignUp />
+      },
+      {
+        path: "/contact-us",
+        element: <Contact />
+      },
+      {
+        path: "/about-us",
+        element: <About />
+      }
+    ]
   },
-  {
-    path: "/contact-us",
-    element: <Contact />
-  },
-  {
-    path: "/about-us",
-    element: <About />
-  }
+
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -27,8 +27,8 @@ const AddNote = () => {
     };
 
     return (
-        <div className='w-full min-h-[80vh] bg-[#112e42] px-[10rem] py-[8%]  flex flex-col items-center justify-center gap-20'>
-            <div className='min-h-[40vh] w-[60vw] flex justify-center items-center flex-col gap-6 rounded-lg px-5 z-40 pt-20'>
+        <div className='w-full min-h-[80vh] bg-[#112e42] py-20 flex flex-col items-center justify-center'>
+            <div className='min-h-[40vh] w-[80vw] md:w-[60vw] flex justify-center items-center flex-col gap-6 rounded-lg px-5 z-10'>
                 <div className="min-w-[30vw] w-full mx-auto rounded-2xl p-4 md:p-8 shadow-input bg-transparent z-40 border-red-400 border-2">
                     <h2 className="font-bold text-4xl text-neutral-800 dark:text-neutral-200 text-center">
                         <span className='text-[#00abf0]'>i</span>NoteBook

@@ -1,7 +1,8 @@
 import React from "react";
 import { FloatingNav } from "./ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
-import Header from "./Header"
+// import Header from "./Header";
+import Nav from "./Nav";
 export default function Navbar() {
   const navItems = [
     {
@@ -32,7 +33,8 @@ export default function Navbar() {
 const DummyContent = () => {
   return (
     <div className="grid grid-cols-1 h-[10vh] w-full bg-white dark:bg-black relative border border-neutral-200 dark:border-white/[0.2] rounded-md">
-        <Header/>
+      {/* <Header/> */}
+      <Nav />
       <div className="inset-0 absolute bg-grid-black/[0.1] dark:bg-grid-white/[0.2]" />
     </div>
   );

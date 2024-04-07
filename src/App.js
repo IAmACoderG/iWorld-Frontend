@@ -6,7 +6,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { BackgroundBeams } from "./components/ui/background-beams";
 import Footer from './components/Footer';
-import AddNote from './components/AddNote';
+// import AddNote from './components/AddNote';
+import { Outlet } from "react-router-dom"
 
 function App() {
 
@@ -94,12 +95,12 @@ function App() {
   return (
     <div className="rounded-md bg-neutral-950 antialiased dark min-h-screen bg-black/[0.96] bg-grid-white/[0.02] italic">
       <UserDataProvider value={{ addNote, allNote, updateNote, deleteNote, notes }}>
-
         {/* <Header /> */}
-        <Navbar/>
-        <AddNote />
-        <Footer/>
-
+        <Navbar />
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
       </UserDataProvider>
       <BackgroundBeams />
     </div>
