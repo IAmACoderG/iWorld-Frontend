@@ -4,13 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Login from './components/LogIn';
-import SignUp from './components/SignUp';
-import Contact from "./components/Contact";
-import About from "./components/About";
-import AddNote from "./components/AddNote";
-import Banner from "./components/Banner"
-
+import Banner from "./components/Banner";
+import { AboutUs, ContactUs, CreateAccount, Home, SignIn } from "./pages"
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,23 +17,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/home",
-        element: <AddNote />
+        element: <Home />
       },
       {
         path: "/login",
-        element: <Login />
+        element: <SignIn />
       },
       {
         path: "/signup",
-        element: <SignUp />
+        element: <CreateAccount />
       },
       {
         path: "/contact-us",
-        element: <Contact />
+        element: <ContactUs />
       },
       {
         path: "/about-us",
-        element: <About />
+        element: <AboutUs />
       }
     ]
   },
